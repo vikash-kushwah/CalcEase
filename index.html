@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CalcEase</title>
+        <link rel="website icon" type="image/png" href="Calculator.png">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><i>&nbsp;&nbsp; CalcEase</i></h2>
+                <form>
+                    <div class="display">
+                        <input type="text" name="display" readonly>
+                    </div>
+                    <div>
+                        <input type="button" value="AC" onclick="clearDisplay()" class="clear">
+                        <input type="button" value="DEL" onclick="deleteLast()" class="clear">
+                        <input type="button" value="." onclick="appendToDisplay('.')" class="operator">
+                        <input type="button" value="/" onclick="appendToDisplay('/')" class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="appendToDisplay('7')" class="num">
+                        <input type="button" value="8" onclick="appendToDisplay('8')" class="num">
+                        <input type="button" value="9" onclick="appendToDisplay('9')" class="num">
+                        <input type="button" value="*" onclick="appendToDisplay('*')" class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="appendToDisplay('4')" class="num">
+                        <input type="button" value="5" onclick="appendToDisplay('5')" class="num">
+                        <input type="button" value="6" onclick="appendToDisplay('6')" class="num">
+                        <input type="button" value="-" onclick="appendToDisplay('-')" class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="appendToDisplay('1')" class="num">
+                        <input type="button" value="2" onclick="appendToDisplay('2')" class="num">
+                        <input type="button" value="3" onclick="appendToDisplay('3')" class="num">
+                        <input type="button" value="+" onclick="appendToDisplay('+')" class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="00" onclick="appendToDisplay('00')" class="num">
+                        <input type="button" value="0" onclick="appendToDisplay('0')" class="num">
+                        <input type="button" value="=" class="equal" onclick="calculate()">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <footer>© 2023 CalcEase.
+            <br>Contact Us | <a href="https://www.linkedin.com/in/vikash-kushwaha-16772025b" target="_blank" style="color: rgb(0, 89, 255); text-decoration-line: none;">Linkedin</a> | 
+            <a href="https://github.com/Vikash0001k" target="_blank" style="color: rgb(0, 89, 255);text-decoration-line: none;" >Github</a> | 
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHwQkDkcmQFHpjjjwNtZFlJPmjNdrHWNjCGSKqHWQBVPGRplwPNkSjfmGDGVGXpBPkHpHJB" target="_blank" style="color: rgb(0, 89, 255); text-decoration-line: none;" >2022pcecsvikash182@poornima.org</a> |
+            <br>
+            Perform Calculations Effortlessly with CalcEase.
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+    
+</html>
